@@ -1,3 +1,4 @@
+import 'package:ctrlf/file_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:ctrlf/login_signup_page.dart';
 import 'package:ctrlf/authentication.dart';
@@ -77,7 +78,7 @@ class _RootPageState extends State<RootPage> {
         break;
       case AuthStatus.LOGGED_IN:
         if (_userId.length > 0 && _userId != null) {
-          return new HomePage(
+          return new FilePickerDemo(
 //            userId: _userId,
 //            auth: widget.auth,
 //            logoutCallback: logoutCallback,
